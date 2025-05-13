@@ -30,9 +30,16 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       text-align: center;
     }
+    .main-image-wrapper {
+      width: 100%;
+      overflow: hidden;
+    }
     .main-image {
-      max-width: 100%;
+      width: 100%;
       height: auto;
+      display: block;
+      max-height: 400px;
+      object-fit: cover;
       border-radius: 8px;
       margin-bottom: 20px;
     }
@@ -50,7 +57,9 @@
   </header>
 
   <div class="container">
-    <img src="banner.jpg" alt="Banner" class="banner">
+    <div class="main-image-wrapper">
+      <img src="banner.jpg" alt="Main Image" class="main-image">
+    </div>
 
     <h1>Soluciones Financieras 1016</h1>
     <p>Complete el formulario y le contactaremos.</p>
