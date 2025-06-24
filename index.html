@@ -16,7 +16,7 @@
       color: white;
       padding: 1rem;
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       justify-content: space-between;
       align-items: center;
     }
@@ -29,7 +29,8 @@
       padding: 0.5rem 1rem;
       border-radius: 5px;
       text-decoration: none;
-      margin-top: 0.5rem;
+      margin: 0;
+      white-space: nowrap;
     }
     .hero {
       text-align: center;
@@ -82,11 +83,16 @@
     }
     @media (max-width: 600px) {
       header {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .logo img {
+        height: 32px;
       }
       .btn {
-        align-self: flex-end;
+        font-size: 0.8rem;
+        padding: 0.4rem 0.7rem;
       }
     }
   </style>
@@ -99,9 +105,9 @@
     <a class="btn" href="https://wa.me/50670511249" target="_blank">WhatsApp</a>
   </header>
 
-  <section class="hero">Escuchamos y resolvemos pronto.</section>
+  <section class="hero">Escuchamos y Financiamos</section>
   <div class="hero-image">
-    <img src="banner.jpg" alt="Growth graph" />
+    <img src="hero.jpg" alt="Woman working with laptop and phone" />
   </div>
 
   <section class="benefits">
@@ -112,7 +118,7 @@
         <p>We don’t want you to dread Mondays or coming to work daily. That’s why we create a safe and productive work environment where you can achieve your full potential.</p>
       </div>
       <div class="card">
-        <h4>Comprar Nueva Maquinaria</h4>
+        <h4>Factoreo</h4>
         <p>Here at ALTAVISTA CAPITAL, we pay you what you deserve or even more. As long as you help us achieve our goals, we’ll keep changing the world together.</p>
       </div>
       <div class="card">
@@ -124,14 +130,14 @@
   </section>
 
   <section class="form-section">
-    <h3>Let’s connect — fill out the form below:</h3>
+    <h3>Comencemos — complete el siguiente formulario:</h3>
     <iframe src="https://forms.office.com/r/5SZSuZ76Xu?embed=true" allowfullscreen></iframe>
   </section>
 
   <footer>
     <p>Altavista Capital S.A.</p>
     <p>Email: contact@altavistacapital.com</p>
-    <p>Phone: +506 6000 0000</p>
+    <p>Phone: +506 7051-1249</p>
     <p>&copy; 2025 Altavista Capital. All rights reserved.</p>
   </footer>
 </body>
