@@ -1,72 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Soluciones Financieras 1016</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Altavista Capital</title>
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #f5f5f5;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #001133;
+      line-height: 1.6;
     }
     header {
-      background-color: #ffffff;
-      padding: 10px 20px;
+      background-color: #002f6c;
+      color: white;
+      padding: 1rem;
       display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
       align-items: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     .logo {
-      height: 50px;
+      font-weight: bold;
+      font-size: 1.2rem;
     }
-    .container {
-      max-width: 800px;
-      margin: 40px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    .btn {
+      background-color: white;
+      color: #002f6c;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 0.5rem;
+    }
+    .hero {
       text-align: center;
+      padding: 3rem 1rem 1rem;
+      font-size: 2rem;
     }
-    .main-image-wrapper {
-      width: 100%;
-      overflow: hidden;
-    }
-    .main-image {
+    .hero-image img {
       width: 100%;
       height: auto;
       display: block;
-      max-height: 400px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 20px;
+    }
+    .benefits {
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    .benefits h2 {
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .card {
+      max-width: 300px;
+      flex: 1 1 300px;
+      text-align: left;
+    }
+    .form-section {
+      background-color: #f0f0f0;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    .form-section h3 {
+      margin-bottom: 1rem;
     }
     iframe {
-      border: none;
       width: 100%;
-      height: 600px;
+      max-width: 640px;
+      height: 480px;
+      border: none;
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 1rem;
+      }
+      .btn {
+        align-self: flex-end;
+      }
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="logo.png" alt="Logo" class="logo">
+    <div class="logo">ALTAVISTA CAPITAL</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About us</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+    <a class="btn" href="#">Book now</a>
   </header>
 
-  <div class="container">
-    <div class="main-image-wrapper">
-      <img src="banner.jpg" alt="Main Image" class="main-image">
-    </div>
-
-    <h1>Soluciones Financieras 1016</h1>
-    <p>Complete el formulario y le contactaremos.</p>
-
-    <!-- Embedded Microsoft Form -->
-    <iframe src="https://forms.office.com/r/5SZSuZ76Xu?embed=true" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen></iframe>
+  <section class="hero">We listen and act</section>
+  <div class="hero-image">
+    <img src="hero.jpg" alt="Woman working with laptop and phone" />
   </div>
 
+  <section class="benefits">
+    <h2>From us, you can enjoy the following:</h2>
+    <div class="cards">
+      <div class="card">
+        <h4>A great working environment</h4>
+        <p>We don’t want you to dread Mondays or coming to work daily. That’s why we create a safe and productive work environment where you can achieve your full potential.</p>
+      </div>
+      <div class="card">
+        <h4>Competitive salaries</h4>
+        <p>Here at ALTAVISTA CAPITAL, we pay you what you deserve or even more. As long as you help us achieve our goals, we’ll keep changing the world together.</p>
+      </div>
+      <div class="card">
+        <h4>Employee benefits</h4>
+        <p>We also provide benefits such as overtime compensation, paid time off, and minimum wage.</p>
+      </div>
+    </div>
+    <p><a class="btn" href="#">Our Offering</a></p>
+  </section>
+
+  <section class="form-section">
+    <h3>Let’s connect — fill out the form below:</h3>
+    <iframe src="https://forms.office.com/r/5SZSuZ76Xu?embed=true" allowfullscreen></iframe>
+  </section>
 </body>
 </html>
