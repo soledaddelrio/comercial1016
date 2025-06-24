@@ -20,18 +20,8 @@
       justify-content: space-between;
       align-items: center;
     }
-    .altavistacapitallogo img {
+    .logo img {
       height: 40px;
-    }
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 0.5rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
     }
     .btn {
       background-color: white;
@@ -46,7 +36,7 @@
       padding: 3rem 1rem 1rem;
       font-size: 2rem;
     }
-    .banner img {
+    .hero-image img {
       width: 100%;
       height: auto;
       display: block;
@@ -84,15 +74,16 @@
       height: 480px;
       border: none;
     }
+    footer {
+      background-color: #002f6c;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
     @media (max-width: 600px) {
       header {
         flex-direction: column;
         align-items: flex-start;
-      }
-      nav {
-        width: 100%;
-        justify-content: space-around;
-        margin-top: 1rem;
       }
       .btn {
         align-self: flex-end;
@@ -102,25 +93,19 @@
 </head>
 <body>
   <header>
-    <div class="altavistacapitalLogo">
-      <img src="AltavistaCapitaLogo.png" alt="Altavista Capital Logo">
+    <div class="logo">
+      <img src="logo.png" alt="Altavista Capital Logo">
     </div>
-    <nav>
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#">info@altavistacapital.com</a>
-    </nav>
-    <a class="btn" href="#">WH (506) 888-8888</a>
+    <a class="btn" href="https://wa.me/50660000000" target="_blank">Contact us on WhatsApp</a>
   </header>
 
-  <section class="hero">Escuchamos y actuamos pronto.</section>
-  <div class="banner">
-    <img src="banner.jpg" alt="growth graph" />
+  <section class="hero">We listen and act</section>
+  <div class="hero-image">
+    <img src="hero.jpg" alt="Woman working with laptop and phone" />
   </div>
 
   <section class="benefits">
-    <h2>Con Altavista, usted podrá:</h2>
+    <h2>From us, you can enjoy the following:</h2>
     <div class="cards">
       <div class="card">
         <h4>A great working environment</h4>
@@ -142,5 +127,12 @@
     <h3>Let’s connect — fill out the form below:</h3>
     <iframe src="https://forms.office.com/r/5SZSuZ76Xu?embed=true" allowfullscreen></iframe>
   </section>
+
+  <footer>
+    <p>Altavista Capital S.A.</p>
+    <p>Email: contact@altavistacapital.com</p>
+    <p>Phone: +506 6000 0000</p>
+    <p>&copy; 2025 Altavista Capital. All rights reserved.</p>
+  </footer>
 </body>
 </html>
