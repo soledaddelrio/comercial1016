@@ -23,6 +23,11 @@
     .logo img {
       height: 40px;
     }
+    .logo-text {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: white;
+    }
     .btn {
       background-color: white;
       color: #002f6c;
@@ -45,11 +50,11 @@
       display: block;
     }
     @media (min-width: 768px) {
-  .hero-image img {
-    max-height: 33vh;
-    object-fit: cover;
-  }
-  }
+    .hero-image img {
+      max-height: 33vh;
+      object-fit: cover;
+    }
+    }
     .benefits {
       padding: 3rem 1rem;
       text-align: center;
@@ -107,9 +112,10 @@
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="logo.png" alt="Altavista Capital Logo">
-    </div>
+      <div class="logo">
+      <img src="logo.png" alt="Altavista Capital Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+      <span class="logo-text" style="display: none;">Altavista Capital</span>
+      </div>
     <a class="btn" href="https://wa.me/50670511249" target="_blank">WhatsApp</a>
   </header>
 
