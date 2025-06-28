@@ -119,6 +119,37 @@
       padding: 2rem 1rem;
       text-align: center;
     }
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .footer-about,
+    .footer-contact {
+      flex: 1 1 300px;
+    }
+
+    footer h4 {
+      margin-top: 0;
+      color: #ffffff;
+    }
+
+    footer p {
+      margin: 0.5rem 0;
+      color: #ffffff;
+    }
+
+    @media (max-width: 600px) {
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  
     @media (max-width: 600px) {
       header {
         flex-wrap: nowrap;
@@ -144,7 +175,7 @@
     <a class="btn" href="https://wa.me/50670511249" target="_blank">WhatsApp</a>
   </header>
 
-  <section class="hero">Impulsa el crecimiento de tu negocio, con el capital que necesitas hoy.</section>
+  <section class="hero">Impulsa el crecimiento de tu negocio, con el capital que necesitas HOY.</section>
   <div class="hero-image">
     <img src="banner.png" alt="Growing your business" />
   </div>
@@ -174,10 +205,19 @@
   </section>
 
   <footer>
-    <p>Comercial 1016 S.A.</p>
-    <p>Email: contacto@pconectacredit.com</p>
-    <p>Phone: +506 7051-1249</p>
-    <p>&copy; 2025 Comercial 1016. All rights reserved.</p>
-  </footer>
+  <div class="footer-container">
+    <div class="footer-about">
+      <h4>Conecta Credit</h4>
+      <p>Ofrecemos soluciones de financiamiento accesibles para impulsar el crecimiento de pequeñas y medianas empresas. Trabajamos de cerca con nuestros clientes para crear estrategias ágiles, transparentes y efectivas. Nuestro enfoque combina confianza, rapidez y acompañamiento personalizado.</p>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Email: contact@altavistacapital.com</p>
+      <p>Phone: +506 6000 0000</p>
+      <p>&copy; 2025 Altavista Capital. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
