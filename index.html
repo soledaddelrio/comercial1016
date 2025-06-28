@@ -16,15 +16,20 @@
       color: white;
       padding: 1rem;
       display: flex;
-      flex-wrap: nowrap;
+      /*flex-wrap: nowrap;
       justify-content: space-between;
-      align-items: center;
+      align-items: center;* Asi estaba antes*/
+     
       /* hace el header fijo */
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       z-index: 1000;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-sizing: border-box;
     }
     .logo img {
       height: 40px;
@@ -37,11 +42,19 @@
     .btn {
       background-color: white;
       color: #002f6c;
-      padding: 0.5rem 1rem;
+      white-space: nowrap;
+      /*padding: 0.5rem 1rem;
       border-radius: 5px;
       text-decoration: none;
-      margin: 0;
-      white-space: nowrap;
+      margin: 0; */
+     
+      /* hace el header fijo */
+      font-size: 0.9rem;
+      padding: 0.5rem 0.8rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 45%;
+      text-align: center;
     }
     .hero {
       margin-top: 110px; /* Adjust based on your header height */
