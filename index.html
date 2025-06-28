@@ -19,6 +19,12 @@
       flex-wrap: nowrap;
       justify-content: space-between;
       align-items: center;
+      /* hace el header fijo */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
     }
     .logo img {
       height: 40px;
@@ -38,6 +44,7 @@
       white-space: nowrap;
     }
     .hero {
+      margin-top: 80px; /* Adjust based on your header height */
       text-align: center;
       padding: 3rem 1rem 2rem;
       font-size: clamp(1.25rem, 5vw, 2rem);
